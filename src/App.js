@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import { Search } from '@mui/icons-material';
+import { useState } from 'react';
 import './App.css';
+import Sidebar from './components/sidebar/Sidebar';
+import Dashboard from './components/student-dashboard/dashboard/Dashboard';
 
 function App() {
+  
+  const[active, setActive] = useState(false);
+
+  const handleSubmit = () => setActive(!active);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className='app__light-blue'></div>
+      <div className='app__dark-blue'></div>
+      <div className='app__container'>
+        <Sidebar />
+        <Dashboard />
+      </div>
+      <Search 
+        className='search__icon'
+        onClick={ handleSubmit }
+      />
+      <div className={`app__input ${active && 'active__search'}`} >
+        <input type='text' placeholder='Search for student..' />
+        <button>Search</button>
+      </div>
     </div>
   );
 }

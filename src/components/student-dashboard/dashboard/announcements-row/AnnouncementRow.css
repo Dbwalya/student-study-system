@@ -1,0 +1,35 @@
+.announcementRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: ease 0.3s;
+    border-radius: 13px;
+    padding-right: 13px;
+}
+.announcementRow:hover {
+    background-color: #030162;
+    padding-left: 17px;
+}
+.announcementRow__left {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    padding: 14px 0px;
+    flex: 1;
+}
+.announcementRow__left > h3 {
+    font-size: 15px;
+    color: #3f3ab4;
+}
+.announcementRow__left > span {
+    font-size: 14px;
+    color: #dcefc4;
+    font-weight: 500;
+}
+.announcements__arrowIcon {
+    font-size: 20px;
+    background-color: #584cf4;
+    color: #fff;
+    border-radius: 50%;
+}

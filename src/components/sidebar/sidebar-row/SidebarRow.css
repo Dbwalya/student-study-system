@@ -1,0 +1,13 @@
+.sidebarRow {
+    display: flex;
+    padding: 15px 32px;
+    align-items: center;
+    gap: 18px;
+    color: #e5e4ff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.sidebarRow:hover {
+    background-color: #000228;
+    transition: all ease 0.3s;
+}

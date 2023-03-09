@@ -1,0 +1,52 @@
+.dashboard {
+    width: 100%;
+    padding: 18px 20px;
+    gap: 20px;
+    overflow: scroll;
+}
+.dashboard::-webkit-scrollbar {
+    display: none;
+}
+.dashboard__header {
+    width: 100%;
+}
+.dashboard__student-courseCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+}
+.dashboard__cards-challenges {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.dashboard__body {
+    display: flex;
+    color: #fff;
+    padding: 13px 18px;
+    gap: 16px;
+}
+.dashboard__body-announcements {
+    background-color: #010039;
+    flex: 0.6;
+    padding: 14px 20px;
+    border-radius: 13px;
+}
+.dashboard__body-leaderboard {
+    background-color: #010039;
+    flex: 0.4;
+    border-radius: 13px;
+    padding: 10px 0px;
+}
+.dashboard__body-leaderboard > h3 {
+    margin-left: 20px;
+}
+.dashboard__leaderboard-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000228;
+    padding: 14px 20px;
+    margin-top: 10px;
+    padding-right: 28px;
+    padding-left: 14px;
+}

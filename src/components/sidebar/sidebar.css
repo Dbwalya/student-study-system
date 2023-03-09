@@ -1,0 +1,76 @@
+.sidebar {
+    background-color: #010039;
+    height: 100%;
+    width: 320px;
+    position: relative;
+}
+
+.sidebar__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 200px;
+    padding-top: 30px;
+}
+.sidebar__header > .plus-icon {
+    margin-top: -10px;
+    z-index: 100;
+    background-color: #ef167F;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.sidebar__header-userInfo {
+    padding: 14px 10px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.sidebar__header-userInfo h3, span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.sidebar__header-userInfo > h3 {
+    font-size: 16px;
+}
+.sidebar__header-userInfo > h3 .MuiSvgIcon-root {
+    font-size: 18px;
+}
+.sidebar__header-userInfo > span {
+    font-size: 14px;
+    color: #c0a17a;
+}
+.sidebar__header-userInfo > span .MuiSvgIcon-root{
+    color: #c0a17a;
+}
+.sidebar__student-ranking {
+    background-color: #000228;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.sidebar__student-ranking h2 {
+    font-size: 38px;
+}
+.sidebar__student-ranking span {
+    font-size: 14px;
+}
+.sidebar__ranking-right, .sidebar__ranking-right {
+    text-align: center;
+}
+.sidebar > span {
+    position: absolute;
+    color: #ac2c7c;
+    bottom: 23px;
+    transform: translateX(100%);
+    font-weight: 600;
+}
+.sidebar__options {
+    padding-top: 15px;
+}

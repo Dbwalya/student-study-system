@@ -1,0 +1,51 @@
+.game {
+    display: flex;
+    background-color: #010039;
+    height: 230px;
+    overflow: hidden;
+    flex: 0.49;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.game:hover {
+    transform: scale(1.03);
+}
+.game__right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.game__right button {
+    max-width: 220px;
+    padding: 10px;
+    border: none;
+    border-radius: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.game__right-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.game__stats-info {
+    text-align: center;
+}
+.game__stats-info h3{
+    font-size: 36px;
+    color: #e0e2ea;
+}
+.game__stats-info span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #9698b5;
+}
+.game > img {
+    border-radius: 47%;
+    object-fit: contain;
+    margin-left: -69px;
+}
